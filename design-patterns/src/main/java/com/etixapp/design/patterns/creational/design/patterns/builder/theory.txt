@@ -1,0 +1,1 @@
+** Easy to create class that has many parameters or maybe other dependencies witch have more parameters to set

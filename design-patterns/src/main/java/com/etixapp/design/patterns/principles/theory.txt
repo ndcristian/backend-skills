@@ -1,0 +1,27 @@
+SOLID;
+
+S = Single Responsibility Principle
+O = Open Close Principle
+L = Liskov  Substitution Principle
+I = Interface Segregation Principle
+D = Dependency Inversion Principle
+
+** S = Single Responsibility Principle **
+THERE SHOULD NEVER BE MORE THAN ONE REASON FOR A CLASS TO CHANGE
+that means one class one responsibility  or one particular reason for class to change
+
+** O = Open Close Principle
+SOFTWARE ENTITIES (Class, Modules, Methods etc) SHOULD BE OPEN FOR EXTENSION, BUT CLOSE FOR MODIFICATION
+we should be able to extend a class but the existing code remains unchanged
+
+** L = Liskov  Substitution Principle
+WE SHOULD BE ABLE TO SUBSTITUTE BASE CLASS OBJECTS WITH CHILD CLASS OBJECTS AND THIS SHOULD NOT ALTER THE BEHAVIOR OR CHARACTERISTICS OF PROGRAM
+we should be able to replace a base class object with a child object and the functionality remain the same
+
+** I = Interface Segregation Principle
+CLIENTS SHOULD NOT BE FORCED TO DEPEND UPON INTERFACES THAT THEY DO NOT USE
+that means a class should not be forced to implement methods that it not use
+
+** D = Dependency Inversion Principle
+A. A HIGH LEVEL MODULES SHOULD NOT DEPEND UPON A LOW LEVEL MODULE. BOTH SHOULD DEPEND UPON ABSTRACTION
+B. ABSTRACTIONS SHOULD NOT DEPEND UPON DETAILS. DETAILS SHOULD DEPEND UPON ABSTRACTION.
