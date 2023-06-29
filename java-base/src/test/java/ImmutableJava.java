@@ -10,6 +10,7 @@ public class ImmutableJava {
     @Test
     public void testName() {
         person2.setName(name);
+        System.out.println("*** java-base -> test -> immutable");
         System.out.println(person.getName());
         System.out.println(person==person2);
 //        assertEquals(name, person.getName());
