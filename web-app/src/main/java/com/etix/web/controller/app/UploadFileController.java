@@ -4,7 +4,7 @@ import com.etix.web.model.UploadFileModel;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+//import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,20 +20,26 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/file")
 //@CrossOrigin("http://localhost:4200")
-//@CrossOrigin
+@CrossOrigin
 public class UploadFileController {
-
 
 
     @PostMapping("/image")
     public ResponseEntity saveFile(@RequestBody UploadFileModel data,
-                                 @RequestParam("image") MultipartFile multipartFile) throws IOException {
+                                   @RequestParam("image") MultipartFile multipartFile) throws IOException {
 
         String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
 
 //        FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
 
         return new ResponseEntity("PING", HttpStatus.OK);
+    }
+
+    @PostMapping("test")
+    public ResponseEntity testFile(@RequestParam("name") String name, @RequestParam("file") MultipartFile file) throws IOException {
+        file.getOriginalFilename().replace(file.getOriginalFilename(), "24352345asdfdf.png");
+
+        return new ResponseEntity(file.getOriginalFilename(), HttpStatus.OK);
     }
 
 
