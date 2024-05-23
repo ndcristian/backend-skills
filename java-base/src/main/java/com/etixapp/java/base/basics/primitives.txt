@@ -1,0 +1,10 @@
+
+
+byte (-128 to 127)          8 bits       Wrapper class: Byte
+short (-32768 to 32767)     16 bits      Wrapper class: Short
+int (2^31 to 2^31-1)        32 bits      Wrapper class: Integer
+long (2^63 to 2^63-1)       64 bits      Wrapper class: Long
+float (decimal number)      32 bits      Wrapper class: Float
+double (decimal number)     64 bits      Wrapper class: Double
+char '\u0000' to \uuffff'   16 bits      Wrapper class: Character
+boolean  true/false         1 bit        Wrapper class: Boolean
