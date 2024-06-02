@@ -42,7 +42,7 @@ public class CategoryModel {
   @Column(name = "name")
   private String name;
 
-  @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+  @OneToMany(mappedBy = "category", cascade = CascadeType.ALL,  fetch = FetchType.EAGER)
   private List<SubCategory1Model> subcategory1 = new ArrayList<>();
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

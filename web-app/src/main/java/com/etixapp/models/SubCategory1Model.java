@@ -36,9 +36,9 @@ public class SubCategory1Model {
   @Column(name = "name")
   private String name;
 
-  @JsonBackReference
-  @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-  @JoinColumn(name = "category_id")
+//  @JsonBackReference
+  @ManyToOne
+  @JoinColumn(name = "category_id", referencedColumnName = "id" )
   private CategoryModel category;
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
