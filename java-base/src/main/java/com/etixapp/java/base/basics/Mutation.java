@@ -1,5 +1,6 @@
 package com.etixapp.java.base.basics;
 
+import com.etixapp.java.base.basics.nested.OuterClassStaticExample;
 import java.util.Arrays;
 
 public class Mutation {
