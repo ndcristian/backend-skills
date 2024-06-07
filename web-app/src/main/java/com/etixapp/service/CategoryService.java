@@ -18,6 +18,7 @@ public class CategoryService {
 	@Transactional
 	public CategoryModel saveCategories(CategoryModel categoryModel) {
 		return categoryRepository.save(categoryModel);
+
 	}
 
 	public List<CategoryModel> getAllCategories() {
