@@ -1,9 +1,14 @@
+package lambda;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import org.junit.jupiter.api.Test;
 
 import com.etixapp.java.base.basics.lambda.GreetingService;
 import com.etixapp.java.base.basics.lambda.ObjectOperations;
+import com.etixapp.java.base.basics.lambda.StringConcat;
 import com.etixapp.java.base.basics.lambda.StringOperations;
 
 public class LambdaTest {
@@ -36,6 +41,9 @@ public class LambdaTest {
 		System.out.println(response);
 	}
 
+	/**
+	 * METHOD REFERENCE
+	 * */
 	StringOperations operation1 = s1 -> System.out.println(s1);
 	// or using METHOD REFERENCE we can write it like this:
 	StringOperations operation2 = System.out::println;
@@ -44,11 +52,27 @@ public class LambdaTest {
 
 	ObjectOperations obj = Objects::isNull;
 
+	/**
+	 * Multiple params METHOD REFERENCE
+	 *  */
+
+	// normal way to define lambda
+	StringConcat stringConcat = (s1, s2) -> s1.concat(s2);
+	// using method reference
+	StringConcat stringConcat2 = String::concat;
+	// java will know what and how to use parameters
+
+	List<String> myList = new ArrayList<>();
+	StringOperations listOperation = (s)-> myList.add(s);
+	StringOperations listOperation2 = myList::add;
+
+
 	@Test
 	void runTest() {
 		test(g); // first call
 		test(g1); // second call
 		// so we call the methode by providing it the lambda expression directly
+		/** HIGHER ORDER FUNCTION */
 		test((n) -> n.toUpperCase() + '-' + n.length());
 
 		operation1.accept("Hello");
@@ -56,5 +80,12 @@ public class LambdaTest {
 		operation2.accept("REFERENCE");
 		System.out.println(obj.evaluate("this"));
 
+		// 2 params
+		System.out.println( stringConcat.concatString("ab", "cd"));
+		System.out.println( stringConcat2.concatString("ab", "cd"));
+
+		listOperation.accept("Name");
+		listOperation2.accept("Name2");
+		System.out.println(myList);
 	}
 }
