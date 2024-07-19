@@ -1,7 +1,5 @@
 package com.etixapp.models;
 
-import static jakarta.persistence.CascadeType.*;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.CascadeType;
@@ -11,8 +9,6 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
@@ -21,7 +17,7 @@ import jakarta.persistence.TemporalType;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -41,9 +37,6 @@ public class CategoryModel {
 
   @Column(name = "name")
   private String name;
-
-  @OneToMany(mappedBy = "category", cascade = CascadeType.ALL,  fetch = FetchType.EAGER)
-  private List<SubCategory1Model> subcategory1 = new ArrayList<>();
 
   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   @Column(name = "deleted", columnDefinition = "boolean default false")
