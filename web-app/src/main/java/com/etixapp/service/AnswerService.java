@@ -18,7 +18,7 @@ public class AnswerService {
 		return answerRepository.findAll();
 	}
 
-	public AnswerModel saveAnswer(AnswerModel answer){
+	public AnswerModel saveAnswer(AnswerModel answer) {
 		return answerRepository.save(answer);
 	}
 }

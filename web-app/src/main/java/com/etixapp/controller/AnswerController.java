@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.etixapp.models.AnswerModel;
-import com.etixapp.models.CategoryModel;
 import com.etixapp.service.AnswerService;
 
 @RestController
