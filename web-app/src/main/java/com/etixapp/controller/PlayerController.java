@@ -14,32 +14,32 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.etixapp.models.oneToManyBidirectional.QuestionModel;
-import com.etixapp.service.QuestionService;
+import com.etixapp.models.manyToManyBidirectional.PlayerModel;
+import com.etixapp.repository.PlayerRepository;
 
 @RestController
 @CrossOrigin
 @RequestMapping(path = "api")
-public class QuestionController {
+public class PlayerController {
 
 	@Autowired
-	QuestionService questionService;
+	PlayerRepository repository;
 
-	@GetMapping("/question")
-	public ResponseEntity<List<QuestionModel>> getAll(){
-		List<QuestionModel> questionModelList = questionService.getAll();
-		return ResponseEntity.status(HttpStatus.OK).body(questionModelList);
+	@GetMapping("/player")
+	public ResponseEntity<List<PlayerModel>> getAll(){
+		List<PlayerModel> PlayerModelList = repository.findAll();
+		return ResponseEntity.status(HttpStatus.OK).body(PlayerModelList);
 	}
 
-	@PostMapping("/question")
-	public ResponseEntity<QuestionModel> save(@RequestBody QuestionModel questionModel){
-		QuestionModel question = questionService.save(questionModel);
-		return ResponseEntity.status(HttpStatus.OK).body(question);
+	@PostMapping("/player")
+	public ResponseEntity<PlayerModel> save(@RequestBody PlayerModel PlayerModel){
+		PlayerModel player = repository.save(PlayerModel);
+		return ResponseEntity.status(HttpStatus.OK).body(player);
 	}
 
-	@DeleteMapping("/question/{id}")
+	@DeleteMapping("/player/{id}")
 	public ResponseEntity<Long> delete(@PathVariable Long id){
-		questionService.delete(id);
+		repository.deleteById(id);
 		return ResponseEntity.status(HttpStatus.OK).body(id);
 	}
 }

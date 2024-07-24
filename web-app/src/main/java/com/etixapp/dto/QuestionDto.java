@@ -2,7 +2,9 @@ package com.etixapp.dto;
 
 import java.util.List;
 
-import com.etixapp.models.AnswerModel;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

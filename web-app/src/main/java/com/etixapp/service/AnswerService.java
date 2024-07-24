@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.etixapp.models.AnswerModel;
+import com.etixapp.models.oneToManyBidirectional.AnswerModel;
 import com.etixapp.repository.AnswerRepository;
 
 @Service //Consider defining a bean of type 'com.etixapp.service.AnswerService' in your configuration.
@@ -15,7 +15,10 @@ public class AnswerService {
 	AnswerRepository answerRepository;
 
 	public List<AnswerModel> getAll() {
-		return answerRepository.findAll();
+
+		List<AnswerModel> modelList = answerRepository.findAll();
+
+		return modelList;
 	}
 
 	public AnswerModel saveAnswer(AnswerModel answer) {

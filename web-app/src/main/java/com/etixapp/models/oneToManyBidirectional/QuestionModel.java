@@ -1,67 +1,68 @@
-package com.etixapp.models;
+package com.etixapp.models.oneToManyBidirectional;
 
 import java.util.Date;
+import java.util.List;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 // BiDirectional ManyToOne - OneToMany
 
 @Entity
-@Table(name = "answer")
+@Table(name = "question")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AnswerModel {
+public class QuestionModel {
 
 	@Id
-	//@GeneratedValue(strategy = GenerationType.AUTO) if only this is present then a new table is created is database with the id sequence
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
 	private long id;
 
-	@Column(name = "text")
-	//@Transient // if this is present when database is first created, this field will not be created in database
-	// if it is added after the database is created, this field is not be persisted in database , NULL is added
-	private String text;
+	@Column(name = "title")
+	private String title;
 
-	@JsonBackReference // avoid stackoverflow call error but the question is not added in the request
-	// also save throws error without it
+	@Column(name = "answer")
+	private String answer;
+
 	//@JsonIgnore // it skips this field from serialization also in get/find and post.save method
-	@ManyToOne
-	@JoinColumn(name = "question_id", nullable = false)
-	private QuestionModel question;
+	@JsonManagedReference // avoid stackoverflow call error and add options to the request
+	// also save throws error without it
+	@OneToMany(mappedBy = "question", cascade = CascadeType.ALL, orphanRemoval = true)
+	// without mapBy and JoinColumn on the child entity (AnswerModel) , another table is created to link this two entities
+	// without  orphanRemoval = true when we try to update the question by removing one of its answers , the answer is not deleted from answer table
+	// CascadeType.ALL will delete the child entity when parent is deleted but if we update the parent like above, the child entity is not deleted and
+	// for this reason we have to use here orphanRemoval = true
+	@Column(name = "options")
+	private List<AnswerModel> options;
 
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-	// property in not accessible at read (not present in response)
 	@Column(name = "deleted", columnDefinition = "boolean default false")
 	private boolean deleted;
 
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-	// property in not accessible at read (not present in response)
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "created")
 	private Date created;
 
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-	// property in not accessible at read (not present in response)
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "modified")
 	private Date modified;

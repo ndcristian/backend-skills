@@ -12,26 +12,26 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.etixapp.models.oneToManyBidirectional.AnswerModel;
-import com.etixapp.service.AnswerService;
+import com.etixapp.models.OneToMany.ProductModel;
+import com.etixapp.repository.ProductRepository;
+import com.etixapp.service.QuestionService;
 
 @RestController
 @CrossOrigin
 @RequestMapping(path = "api")
-public class AnswerController {
+public class ProductController {
 
 	@Autowired
-	AnswerService service;
+	ProductRepository repository;
 
-	@GetMapping("/answer")
-	public ResponseEntity<List<AnswerModel>> getAll(){
-		List<AnswerModel> answerModelList = service.getAll();
-		return ResponseEntity.status(HttpStatus.OK).body(answerModelList);
+	@GetMapping("/product")
+	public ResponseEntity<List<ProductModel>> getAll(){
+		List<ProductModel> productModelList = repository.findAll();
+		return ResponseEntity.status(HttpStatus.OK).body(productModelList);
 	}
-
-	@PostMapping("/answer")
-	public ResponseEntity<AnswerModel> saveCategory(@RequestBody AnswerModel answer) {
-		AnswerModel saved = service.saveAnswer(answer);
-		return ResponseEntity.status(HttpStatus.OK).body(saved);
+	@PostMapping("/product")
+	public ResponseEntity<ProductModel> save(@RequestBody  ProductModel productModel){
+		ProductModel product = repository.save(productModel);
+		return ResponseEntity.status(HttpStatus.OK).body(product);
 	}
 }
