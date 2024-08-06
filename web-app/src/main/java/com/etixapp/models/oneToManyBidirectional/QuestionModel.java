@@ -42,7 +42,8 @@ public class QuestionModel {
 	@Column(name = "answer")
 	private String answer;
 
-	//@JsonIgnore // it skips this field from serialization also in get/find and post.save method
+	//@JsonIgnore // it skips this field from serialization/deserialization  also in get/find and post.save method.
+	// It could be used in a normal class , and it is not related to database persistence
 	@JsonManagedReference // avoid stackoverflow call error and add options to the request
 	// also save throws error without it
 	@OneToMany(mappedBy = "question", cascade = CascadeType.ALL, orphanRemoval = true)

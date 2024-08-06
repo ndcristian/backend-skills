@@ -39,6 +39,7 @@ public class AnswerModel {
 	@Column(name = "text")
 	//@Transient // if this is present when database is first created, this field will not be created in database
 	// if it is added after the database is created, this field is not be persisted in database , NULL is added
+	//When we mark a field with this annotation, the JPA won’t persist the field and it won’t retrieve its value from the database.
 	private String text;
 
 	@JsonBackReference // avoid stackoverflow call error but the question is not added in the request

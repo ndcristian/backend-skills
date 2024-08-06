@@ -1,0 +1,10 @@
+The Functional Programing is a way of building software by using pure functions and by avoiding shared state , mutation & side-effects
+
+shared state = a variable being accessed by more than one function
+side-effects = function modifies the variable
+
+Key Concepts:
+
+*Pure function = that means a function witch return a predictable output no meter what
+*Function as first class object
+*Higher-order functions
