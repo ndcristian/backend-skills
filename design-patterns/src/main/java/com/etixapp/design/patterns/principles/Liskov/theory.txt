@@ -1,0 +1,16 @@
+
+- Objects of a superclass shall be replaceable with the objects of its subclasses without breaking the application
+- that requires the objects of your subclasses to behave in the same way as objects of your superclasses
+- child classes should never break the parent class type definition
+
+EX:
+
+public class Vehicle {}
+public class Car extends Vehicle {}
+
+Liskov substitution principle says that we cat call
+
+ run(Vehicle v)
+ as wel as
+ run(Car c)
+ without breaking the application

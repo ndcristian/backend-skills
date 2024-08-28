@@ -1,0 +1,9 @@
+
+** I = Interface Segregation Principle
+CLIENTS SHOULD NOT BE FORCED TO DEPEND UPON INTERFACES THAT THEY DO NOT USE
+that means a class should not be forced to implement methods that it not use
+
+- it is not good if an interface has a large number of methods
+- we should separate the methods accordingly
+- that because in Java we can implement as many interfaces as we want
+- and in Java an interface can extend other interface

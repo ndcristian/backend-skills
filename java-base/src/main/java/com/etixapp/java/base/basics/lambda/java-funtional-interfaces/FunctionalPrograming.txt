@@ -6,5 +6,5 @@ side-effects = function modifies the variable
 Key Concepts:
 
 *Pure function = that means a function witch return a predictable output no meter what
-*Function as first class object
+*Function as first class object = the ability to assign a function to a variable
 *Higher-order functions

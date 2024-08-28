@@ -13,6 +13,9 @@ that means one class one responsibility  or one particular reason for class to c
 ** O = Open Close Principle
 SOFTWARE ENTITIES (Class, Modules, Methods etc) SHOULD BE OPEN FOR EXTENSION, BUT CLOSE FOR MODIFICATION
 we should be able to extend a class but the existing code remains unchanged
+we should keep as much existing code unchanged as possible
+this is closely related to **Single Responsibility Principle
+a class should not extend a another class explicitly - we should define a common interface instead
 
 ** L = Liskov  Substitution Principle
 WE SHOULD BE ABLE TO SUBSTITUTE BASE CLASS OBJECTS WITH CHILD CLASS OBJECTS AND THIS SHOULD NOT ALTER THE BEHAVIOR OR CHARACTERISTICS OF PROGRAM
