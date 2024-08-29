@@ -1,5 +1,5 @@
 
-- Objects of a superclass shall be replaceable with the objects of its subclasses without breaking the application
+- **Objects of a superclass shall be replaceable with the objects of its subclasses without breaking the application
 - that requires the objects of your subclasses to behave in the same way as objects of your superclasses
 - child classes should never break the parent class type definition
 

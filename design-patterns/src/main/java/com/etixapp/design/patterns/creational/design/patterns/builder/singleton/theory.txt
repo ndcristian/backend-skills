@@ -1,0 +1,4 @@
+
+- it lets you ensure that a class has only one instance while providing a global access point to this instance
+
+- what if we have multiple threads ?

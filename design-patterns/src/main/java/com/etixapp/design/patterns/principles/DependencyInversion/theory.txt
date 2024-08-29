@@ -2,3 +2,12 @@
 ** D = Dependency Inversion Principle
 A. A HIGH LEVEL MODULES SHOULD NOT DEPEND UPON A LOW LEVEL MODULE. BOTH SHOULD DEPEND UPON ABSTRACTION
 B. ABSTRACTIONS SHOULD NOT DEPEND UPON DETAILS. DETAILS SHOULD DEPEND UPON ABSTRACTION.
+
+- the motivation for this principle is how we create software: Usually we create low level classes  then we use these classes to create high level classes
+this is called BOTTOM-UP software development
+
+PROGRAMING IN INTERFACE :
+instead of:
+Dog dog = new Dog();
+do:
+Animal dog = new Dog();  where Animal is an interface
