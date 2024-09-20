@@ -1,0 +1,4 @@
+
+
+- finding an element by index is O(1) complexity
+- finding an element by value is O(n) complexity because we have to loop the entire list

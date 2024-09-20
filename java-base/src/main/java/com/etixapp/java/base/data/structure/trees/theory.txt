@@ -1,0 +1,9 @@
+
+
+Binary search:
+
+- all the nods that are bigger than root node must be placed on the right side of the root node
+- all the nods that are smaller than root node must be placed on left side of the root node
+
+Complexity:
+- finding an element: O(log n)

@@ -1,0 +1,17 @@
+A HEAP is a binary tree, but the numbers are laid out in a different way.
+
+all the children are smaller than its parents
+
+In a HEAP, each node has a value that is greater than each of its descendants, and because of that,
+the maximum value is always going to be at the top. This is MAX HEAP
+
+A key characteristic of a HEAP is this tree will always be complete.
+
+So one of the other things that makes a heap different than a binary search tree is that in a heap you
+can have duplicates.
+
+But you could also have a MIN HEAP where the minimum value is at the top.
+
+So other than the maximum value being at the top, there is no particular order to the other nodes.
+So for example, on the second line we could take these two nodes and switch them.
+And this is still a valid heap.

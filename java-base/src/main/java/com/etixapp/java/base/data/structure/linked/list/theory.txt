@@ -1,0 +1,13 @@
+LinkedList vs. ArrayList
+    - ArrayList use indexes -- LinkedList noes not
+    - ArrayList elements are stored close each other in memory (one after one, contiguous place in memory) --  LinkedList elements are spread into memory
+
+Complexity:
+    - add element to the end: O(1)
+    - remove element from the end: O(n) - because to set the TAIL pointer to last element we have to loop through entire list of elements and that because
+        we can't move backwards to the list LinkedList
+    - add element to the beginning: O(1)
+    - remove element from the beginning: O(1)
+    - inserting a node: O(n)
+    - removing a node: O(n)
+    - finding an element: O(n)

@@ -1,0 +1,9 @@
+Hash tables are a type of data structure in which the address/ index value of the data element is generated from a hash function.
+This enables very fast data access as the index value behaves as a key for the data value.
+
+** see the image. The hash function use the key (not the value) to generate a hash which represents the memory address where element is going to be stored
+
+Collision - is when the generated hash is the same for 2 or more elements that means all this elements have to te stored at the same address
+    To solve this, all thees elements are  added to a LinkedList
+
+Complexity o(1)
