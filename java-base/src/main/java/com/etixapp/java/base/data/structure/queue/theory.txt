@@ -1,0 +1,18 @@
+Features:
+
+Enqueue: Adding an element to the rear of the queue.
+Dequeue: Removing an element from the front of the queue.
+Peek: Retrieve the element at the front of the queue without removing it.
+Size: Determining the number of elements in the queue.
+Empty Check: Checking if the queue is empty.
+
+Advantages:
+FIFO Behavior: Elements are processed in the order of their insertion, ensuring the preservation of the original sequence.
+Efficient Insertion and Removal: Adding and removing elements from a queue is fast and has a constant time complexity of O(1).
+Synchronization: Java provides synchronized queue implementations, making them safe for concurrent programming.
+Standardized Interface: The Queue interface in Java offers a common set of methods, allowing easy interchangeability between different queue implementations.
+Disadvantages:
+
+No Random Access: Queues do not support direct Access to elements in the middle. Accessing specific positions requires dequeuing preceding elements.
+Limited Size: Some queue implementations have a fixed size or capacity, leading to overflow or exceptions when exceeding the maximum size.
+Inefficient Search: Searching for an element in a queue requires dequeuing until a match is found, resulting in a linear search with potentially high time complexity.

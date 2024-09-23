@@ -1,0 +1,30 @@
+HashMap:
+A HashMap is a data structure in Java that provides a way to store and retrieve key-value pairs.
+It is part of the Java Collections Framework and is implemented based on the hash table data structure.
+
+Functions:
+
+put(key, value): Inserts the specified key-value pair into the HashMap.
+get(key): Retrieves the value associated with the specified key.
+containsKey(key): Checks if the HashMap contains the specified key.
+containsValue(value): Checks if the HashMap contains the specified value.
+remove(key): Removes the key-value pair associated with the specified key from the HashMap.
+size(): Returns the number of key-value pairs in the HashMap.
+isEmpty(): Checks if the HashMap is empty.
+keySet(): Returns a Set containing all the keys in the HashMap.
+values(): Returns a Collection containing all the values in the HashMap.
+clear(): Removes all the key-value pairs from the HashMap.
+
+
+****Advantages:****
+
+Efficient Retrieval: HashMap provides fast retrieval of values based on keys with constant-time complexity O(1).
+Flexible Key-Value Pairing: HashMap allows any non-null object as a key, enabling custom-defined keys for storing and retrieving data.
+Dynamic Size: HashMap can dynamically grow or shrink in size to handle varying amounts of data.
+Compatibility with Java Collections Framework: HashMap implements the Map interface, allowing seamless integration with other Collection classes.
+
+****Disadvantages:****
+
+Lack of Ordering: HashMap does not preserve the order of elements. Use LinkedHashMap or TreeMap for specific ordering requirements.
+Increased Memory Overhead: HashMap requires additional memory for hash codes and internal structure compared to simpler data structures.
+Slower Iteration: Iterating over a HashMap can be slower compared to arrays or lists due to traversing the underlying hash table.

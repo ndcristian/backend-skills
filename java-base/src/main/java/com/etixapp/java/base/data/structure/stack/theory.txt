@@ -1,0 +1,26 @@
+Features of a stack:
+
+*** LIFO behavior: The last element pushed onto the stack is the first one to be popped out, making it suitable for applications
+where the order of insertion and removal is important.
+
+*** Limited Access: Stacks typically provide restricted Access to elements. You can only access the topmost element, and to reach other elements,
+you need to pop the elements above them.
+
+*** Dynamic size: Stacks can be implemented using arrays or linked lists, allowing for a dynamic size. They can grow or shrink as needed during runtime.
+
+
+****Features of a stack:****
+
+LIFO behavior: The last element pushed onto the stack is the first one to be popped out, making it suitable for applications
+where the order of insertion and removal is important.
+
+Limited Access: Stacks typically provide restricted Access to elements. You can only access the topmost element, and to reach other elements,
+you need to pop the elements above them.
+
+Dynamic size: Stacks can be implemented using arrays or linked lists, allowing for a dynamic size. They can grow or shrink as needed during runtime.
+
+****Disadvantages:****
+
+Limited Access: Access to elements is restricted to the top of the stack.
+Size restrictions: Stacks may have size limitations depending on the implementation.
+Not suitable for all scenarios: Stacks are specific to LIFO behavior and may not be appropriate in other cases.

@@ -1,0 +1,6 @@
+An array is a basic and often used data structure in the context of Java's data structures.
+It offers a method of storing a fixed-size collection of identical-type components.
+Because they provide quick and easy access to elements depending on their index, arrays are a crucial tool for managing and organizing data.
+
+
+*** See test
