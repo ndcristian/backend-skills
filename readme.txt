@@ -1,4 +1,5 @@
-terminology: ?*T*?
-important info: !*I*!
-important code example: #*C*#
-tricky things: %:)%
+terminology: *#W*
+important info: *#I*
+important code example: *#C*
+tricky things: *#:)*
+caution: *#!*

@@ -60,6 +60,11 @@ public class Collector {
 		Map<Character, List<String>> groupsChar = list.stream().filter(s -> s.length() > 3)
 				.collect(Collectors.groupingBy(s -> s.charAt(0)));
 		System.out.println(groupsChar);
+
+		// to return immutable list
+		var list = List.of(1,2,3,4);
+		var newList = list.stream().filter((i)->{return i>2;}).collect(Collectors.toUnmodifiableList());
+		newList.add(44); // throw error
 	}
 
 }

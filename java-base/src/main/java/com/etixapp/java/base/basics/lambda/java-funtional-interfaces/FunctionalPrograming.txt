@@ -5,6 +5,8 @@ side-effects = function modifies the variable
 
 Key Concepts:
 
-*Pure function = that means a function witch return a predictable output no meter what
-*Function as first class object = the ability to assign a function to a variable
-*Higher-order functions
+* Pure function = that means a function witch return a predictable output no meter what
+* *#W* Function as first class object = the ability to assign a function to a variable
+* Higher-order functions
+
+*other definition:  Lambda is just an implementation or a definition of a functional interface

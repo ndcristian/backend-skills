@@ -45,7 +45,7 @@ public class LambdaTest {
 	 * METHOD REFERENCE
 	 * */
 	StringOperations operation1 = s1 -> System.out.println(s1);
-	// or using (?*T*?) METHOD REFERENCE we can write it like this:
+	// or using (*#W*) METHOD REFERENCE we can write it like this:
 	StringOperations operation2 = System.out::println;
 	//!!!! only for lambda with only one line of code
 	// in this case java assume that the parameter we give to the methode is going to be the same assigned to println methode
