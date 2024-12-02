@@ -10,8 +10,17 @@ public class OuterClassInnerExample {
   // private member
   private int outer_private = 30;
 
+  public void testAccess(){
+    System.out.println(new InnerClass().inner_private);
+  }
+
+  public int testAccessReturn(){
+    return 22;
+  }
+
   // inner class
   public class InnerClass {
+    private int inner_private;
     public void display()
     {
       // can access static member of outer class

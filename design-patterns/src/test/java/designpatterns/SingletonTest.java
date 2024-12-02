@@ -2,9 +2,9 @@ package designpatterns;
 
 import org.junit.jupiter.api.Test;
 
-import com.etixapp.design.patterns.creational.design.patterns.builder.singleton.DatabaseConnector;
+import com.etixapp.design.patterns.creational.design.patterns.singleton.DatabaseConnector;
 
-public class singleton {
+public class SingletonTest {
 
 	@Test
 	public void test(){

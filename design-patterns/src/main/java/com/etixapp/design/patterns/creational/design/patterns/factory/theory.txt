@@ -1,5 +1,5 @@
 
-- factory pattern helps us to create loosly coupled OOP design
+- factory pattern helps us to create loosely coupled OOP design
 = MOTIVATION:
     there a fundamental problem using the NEW keyword
     We should favor abstraction (supertypes) instead of concrete implementation

@@ -1,0 +1,8 @@
+
+** enable selecting an algorithm at runtime
+
+it is a way of implementing dependency injection principle
+
+it relays on composition over inheritance because :
+    inheritance = IS-A relation (problem: a clas can extend only one class)and
+    composition = HAS-A relation and it is more flexible

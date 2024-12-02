@@ -1,0 +1,5 @@
+Motivation:
+The aim is to be able to copy existing objects without depending on those given classes
+
+solution to do that ius to delegate the object creation to the object itself
+this operation is called CLONING

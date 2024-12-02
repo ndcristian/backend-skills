@@ -6,7 +6,7 @@ public class OuterClassStaticExample {
   static int outer_x = 10;
 
   // instance(non-static) member
-  int outer_y = 20;
+  int outer_y = 20; // this is not visible in the static nested class
 
   // private member
   private static int outer_private = 30;

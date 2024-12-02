@@ -1,4 +1,4 @@
-package com.etixapp.design.patterns.creational.design.patterns.builder.singleton;
+package com.etixapp.design.patterns.creational.design.patterns.singleton;
 
 
 // use enums for multithreads because enums are compiled time constants
