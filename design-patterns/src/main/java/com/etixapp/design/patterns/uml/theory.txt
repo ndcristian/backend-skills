@@ -1,0 +1,11 @@
+UML = unified Modeling Language
+- is not a programing language
+- it is a graphical notation
+- used to draw diagrams
+
+Association could be either a Aggregation( object can exist without its container -- owner class)
+or a Composition ( where an object can not exist outside the wrapper class -- owner class )
+
+Aggregation must have a class container and a class contained
+
+But When we can have only Association????
