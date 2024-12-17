@@ -1,0 +1,370 @@
+{
+  "sections": [
+    {
+      "title": "Lesbarmachung der XML-Daten von elektronischen Rechnungen",
+      "data": [
+        [
+          "Stylesheet-Version:",
+          "2.5 vom 10.01.2023"
+        ],
+        [
+          "Rechnungsstandard:",
+          "Factur-x 1.0 Profil EXTENDED"
+        ],
+        [
+          "URN Identifikator:",
+          "urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended"
+        ],
+        [
+          "XML-Eingabedatei:",
+          "factur-x.xml"
+        ]
+      ]
+    },
+    {
+      "title": "Handelsrechnung (380) Nr. KR87654321012 vom 15.11.2024 - KOSTENRECHNUNG",
+      "data": [
+        [
+          "Testkennzeichen:",
+          "TEST"
+        ],
+        [
+          "Währung:",
+          "EUR"
+        ],
+        [
+          "Liefer- und Leistungsdatum:",
+          "30.10.2024"
+        ],
+        [
+          "Lieferschein:",
+          "L87654321012"
+        ],
+        [
+          "Weitere Referenz:",
+          "Art der Referenz:Rechnungsdatenblatt (130)"
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "data": [
+        [
+          "Verkäufer:",
+          ""
+        ],
+        [
+          "Nummer:",
+          "549910"
+        ],
+        [
+          "Globale Nummer:",
+          "4333741000005 (GLN)"
+        ],
+        [
+          "Name:",
+          "MUSTERLIEFERANT GMBH"
+        ],
+        [
+          "Anschrift:",
+          "BAHNHOFSTRASSE 99"
+        ],
+        [
+          "",
+          "DE 99199 MUSTERHAUSEN"
+        ],
+        [
+          "Telefon:",
+          "+49 932 431 500"
+        ],
+        [
+          "E-Mail::",
+          "max.mustermann@musterlieferant.de"
+        ],
+        [
+          "Steuernummer:",
+          "201/113/40209"
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "data": [
+        [
+          "Verkäufer:",
+          ""
+        ],
+        [
+          "Nummer:",
+          "549910"
+        ],
+        [
+          "Globale Nummer:",
+          "4333741000005 (GLN)"
+        ],
+        [
+          "Name:",
+          "MUSTERLIEFERANT GMBH"
+        ],
+        [
+          "Anschrift:",
+          "BAHNHOFSTRASSE 99"
+        ],
+        [
+          "",
+          "DE 99199 MUSTERHAUSEN"
+        ],
+        [
+          "Telefon:",
+          "+49 932 431 500"
+        ],
+        [
+          "E-Mail::",
+          "max.mustermann@musterlieferant.de"
+        ],
+        [
+          "Steuernummer:",
+          "201/113/40209"
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "data": [
+        [
+          "Verkäufer:",
+          ""
+        ],
+        [
+          "Nummer:",
+          "549910"
+        ],
+        [
+          "Globale Nummer:",
+          "4333741000005 (GLN)"
+        ],
+        [
+          "Name:",
+          "MUSTERLIEFERANT GMBH"
+        ],
+        [
+          "Anschrift:",
+          "BAHNHOFSTRASSE 99"
+        ],
+        [
+          "",
+          "DE 99199 MUSTERHAUSEN"
+        ],
+        [
+          "Telefon:",
+          "+49 932 431 500"
+        ],
+        [
+          "E-Mail::",
+          "max.mustermann@musterlieferant.de"
+        ],
+        [
+          "Steuernummer:",
+          "201/113/40209"
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "data": [
+        [
+          "Verkäufer:",
+          ""
+        ],
+        [
+          "Nummer:",
+          "549910"
+        ],
+        [
+          "Globale Nummer:",
+          "4333741000005 (GLN)"
+        ],
+        [
+          "Name:",
+          "MUSTERLIEFERANT GMBH"
+        ],
+        [
+          "Anschrift:",
+          "BAHNHOFSTRASSE 99"
+        ],
+        [
+          "",
+          "DE 99199 MUSTERHAUSEN"
+        ],
+        [
+          "Telefon:",
+          "+49 932 431 500"
+        ],
+        [
+          "E-Mail::",
+          "max.mustermann@musterlieferant.de"
+        ],
+        [
+          "Steuernummer:",
+          "201/113/40209"
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "data": [
+        [
+          "Verkäufer:",
+          ""
+        ],
+        [
+          "Nummer:",
+          "549910"
+        ],
+        [
+          "Globale Nummer:",
+          "4333741000005 (GLN)"
+        ],
+        [
+          "Name:",
+          "MUSTERLIEFERANT GMBH"
+        ],
+        [
+          "Anschrift:",
+          "BAHNHOFSTRASSE 99"
+        ],
+        [
+          "",
+          "DE 99199 MUSTERHAUSEN"
+        ],
+        [
+          "Telefon:",
+          "+49 932 431 500"
+        ],
+        [
+          "E-Mail::",
+          "max.mustermann@musterlieferant.de"
+        ],
+        [
+          "Steuernummer:",
+          "201/113/40209"
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "data": [
+        [
+          "Bemerkungen",
+          ""
+        ],
+        [
+          "Betreff:",
+          "AAK Price conditions"
+        ],
+        [
+          "Schlüssel:",
+          "ST3 Gegenseitige Vereinbarung."
+        ],
+        [
+          "Inhalt:",
+          "Es bestehen Rabatt- oder Bonusvereinbarungen."
+        ],
+        [
+          "Betreff:",
+          "AAJ Additional sale/purchase conditions"
+        ],
+        [
+          "Inhalt",
+          "Der Verkäufer bleibt Eigentümer der Waren bis zur vollständigen Erfüllung der\nKaufpreisforderung."
+        ],
+        [
+          "Telefon:",
+          "+49 932 431 500"
+        ],
+        [
+          "Betreff:",
+          "REG Regulatory information"
+        ],
+        [
+          "Inhalt:",
+          "MUSTERLIEFERANT GMBH\nBAHNHOFSTRASSE 99\n99199 MUSTERHAUSEN\nGeschäftsführung:\nMax Mustermann\nUSt-IdNr: DE123456789\nTelefon: +49 932 431 0\nwww.musterlieferant.de\nHRB Nr. 372876\nAmtsgericht Musterstadt\nGLN 4304171000002"
+        ]
+      ]
+    }
+  ],
+  "table": {
+    "columns": [
+      "Pos",
+      "Referenzen",
+      "Beschreibung",
+      "Nettopreis",
+      "Menge",
+      "Einheit",
+      "Steuersatz",
+      "Nettobetrag"
+    ],
+    "products": [
+      {
+        "pos": "1",
+        "referenzen": "Art-Nr-Lieferant:\nWA997\n4123456000014 (GLN)",
+        "beschreibung": "Wirkarbeit\nBruttopreis",
+        "nettopreis": "0,0520",
+        "menge": "1.000",
+        "einheit": "kWh",
+        "steuersatz": "19%",
+        "nettobetrag": "52,00"
+      },
+      {
+        "pos": "2",
+        "referenzen": "Art-Nr-Lieferant:\nWA997\n4123456000014 (GLN)",
+        "beschreibung": "Wirkarbeit\nBruttopreis ",
+        "nettopreis": "0,0520",
+        "menge": "1.000",
+        "einheit": "kWh",
+        "steuersatz": "19%",
+        "nettobetrag": "52,00"
+      },
+      {
+        "pos": "3",
+        "referenzen": "Art-Nr-Lieferant:\nWA997\n4123456000014 (GLN)",
+        "beschreibung": "Wirkarbeit\nBruttopreis ",
+        "nettopreis": "0,0520",
+        "menge": "1.000",
+        "einheit": "kWh",
+        "steuersatz": "19%",
+        "nettobetrag": "52,00"
+      },
+      {
+        "pos": "4",
+        "referenzen": "Art-Nr-Lieferant:\nWA997\n4123456000014 (GLN)",
+        "beschreibung": "Wirkarbeit\nBruttopreis ",
+        "nettopreis": "0,0520",
+        "menge": "1.000",
+        "einheit": "kWh",
+        "steuersatz": "19%",
+        "nettobetrag": "52,00"
+      },
+      {
+        "pos": "5",
+        "referenzen": "Art-Nr-Lieferant:\nWA997\n4123456000014 (GLN)",
+        "beschreibung": "Wirkarbeit\nBruttopreis ",
+        "nettopreis": "0,0520",
+        "menge": "1.000",
+        "einheit": "kWh",
+        "steuersatz": "19%",
+        "nettobetrag": "52,00"
+      },
+      {
+        "pos": "6",
+        "referenzen": "Art-Nr-Lieferant:\nWA997\n4123456000014 (GLN)",
+        "beschreibung": "Wirkarbeit\nBruttopreis ",
+        "nettopreis": "0,0520",
+        "menge": "1.000",
+        "einheit": "kWh",
+        "steuersatz": "19%",
+        "nettobetrag": "52,00"
+      }
+    ]
+  }
+}

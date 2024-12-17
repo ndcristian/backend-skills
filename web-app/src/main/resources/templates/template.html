@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <title>PDF Template</title>
+</head>
+<body>
+<!-- <div class="title">TITLE</div>
+<h1 th:text="Variable  ...  ${to}"></h1>
+<p>This is a sample PDF generated from an HTML template.</p> -->
+<!--<h1 th:text=" 'this is a variable' + ${to}"></h1>-->
+<div class="document-layout">
+    <div class="document-body">
+        <div th:id="'section-' + ${i.index}" class="section-1" th:each="section, i: ${sections}">
+            <div class="page-break" th:if="${i.index==100}"></div>
+            <h4 th:text="${section.title}"></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr th:each="row, iter: ${section.data}"
+                    th:classappend="|${iter.index%2==0 ? 'odd' : 'even'} ${section.title.length==0 && iter.index==0 ? 'blue' : ''}|"
+                >
+                    <td th:each="value, index: ${row}" th:classappend="'col-'+${index.index}"
+                        th:text="${value}"/>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <table>
+            <tbody>
+            <tr>
+                <th th:each="col: ${tableData.columns}" th:text="${col}"  th:classappend="blue"></th>
+            </tr>
+
+            <tr th:each="prod, iter: ${tableData.products}"
+                th:classappend="${iter.index%2==0 ? 'odd' : 'even'}"
+            >
+                <td th:classappend="'p-col-1 left'"
+                    th:text="${prod.pos}"/>
+                <td th:classappend="'p-col-2 left'"
+                    th:text="${prod.referenzen}"/>
+                <td th:classappend="'p-col-3 left'"
+                    th:text="${prod.beschreibung}"/>
+                <td th:classappend="'p-col-4 right'"
+                    th:text="${prod.nettopreis}"/>
+                <td th:classappend="'p-col-5 right'"
+                    th:text="${prod.menge}"/>
+                <td th:classappend="'p-col-6 right'"
+                    th:text="${prod.einheit}"/>
+                <td th:classappend="'p-col-7 right'"
+                    th:text="${prod.steuersatz}"/>
+                <td th:classappend="'p-col-8 right'"
+                    th:text="${prod.nettobetrag}"/>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <title>PDF Template</title>
+</head>
+<body>
+<!-- <div class="title">TITLE</div>
+<h1 th:text="Variable  ...  ${to}"></h1>
+<p>This is a sample PDF generated from an HTML template.</p> -->
+<!--<h1 th:text=" 'this is a variable' + ${to}"></h1>-->
+<div class="document-layout">
+    <div class="document-body">
+        <div id="section-0" class="section-1">
+            
+            <h4>Lesbarmachung der XML-Daten von elektronischen Rechnungen</h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd "
+                >
+                    <td class="col-0">Stylesheet-Version:</td>
+                    <td class="col-1">2.5 vom 10.01.2023</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Rechnungsstandard:</td>
+                    <td class="col-1">Factur-x 1.0 Profil EXTENDED</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">URN Identifikator:</td>
+                    <td class="col-1">urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">XML-Eingabedatei:</td>
+                    <td class="col-1">factur-x.xml</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-1" class="section-1">
+            
+            <h4>Handelsrechnung (380) Nr. KR87654321012 vom 15.11.2024 - KOSTENRECHNUNG</h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd "
+                >
+                    <td class="col-0">Testkennzeichen:</td>
+                    <td class="col-1">TEST</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Währung:</td>
+                    <td class="col-1">EUR</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Liefer- und Leistungsdatum:</td>
+                    <td class="col-1">30.10.2024</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Lieferschein:</td>
+                    <td class="col-1">L87654321012</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Weitere Referenz:</td>
+                    <td class="col-1">Art der Referenz:Rechnungsdatenblatt (130)</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-2" class="section-1">
+            
+            <h4></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd blue"
+                >
+                    <td class="col-0">Verkäufer:</td>
+                    <td class="col-1"></td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Nummer:</td>
+                    <td class="col-1">549910</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Globale Nummer:</td>
+                    <td class="col-1">4333741000005 (GLN)</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Name:</td>
+                    <td class="col-1">MUSTERLIEFERANT GMBH</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Anschrift:</td>
+                    <td class="col-1">BAHNHOFSTRASSE 99</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0"></td>
+                    <td class="col-1">DE 99199 MUSTERHAUSEN</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Telefon:</td>
+                    <td class="col-1">+49 932 431 500</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">E-Mail::</td>
+                    <td class="col-1">max.mustermann@musterlieferant.de</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Steuernummer:</td>
+                    <td class="col-1">201/113/40209</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-3" class="section-1">
+            
+            <h4></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd blue"
+                >
+                    <td class="col-0">Verkäufer:</td>
+                    <td class="col-1"></td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Nummer:</td>
+                    <td class="col-1">549910</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Globale Nummer:</td>
+                    <td class="col-1">4333741000005 (GLN)</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Name:</td>
+                    <td class="col-1">MUSTERLIEFERANT GMBH</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Anschrift:</td>
+                    <td class="col-1">BAHNHOFSTRASSE 99</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0"></td>
+                    <td class="col-1">DE 99199 MUSTERHAUSEN</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Telefon:</td>
+                    <td class="col-1">+49 932 431 500</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">E-Mail::</td>
+                    <td class="col-1">max.mustermann@musterlieferant.de</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Steuernummer:</td>
+                    <td class="col-1">201/113/40209</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-4" class="section-1">
+            
+            <h4></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd blue"
+                >
+                    <td class="col-0">Verkäufer:</td>
+                    <td class="col-1"></td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Nummer:</td>
+                    <td class="col-1">549910</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Globale Nummer:</td>
+                    <td class="col-1">4333741000005 (GLN)</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Name:</td>
+                    <td class="col-1">MUSTERLIEFERANT GMBH</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Anschrift:</td>
+                    <td class="col-1">BAHNHOFSTRASSE 99</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0"></td>
+                    <td class="col-1">DE 99199 MUSTERHAUSEN</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Telefon:</td>
+                    <td class="col-1">+49 932 431 500</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">E-Mail::</td>
+                    <td class="col-1">max.mustermann@musterlieferant.de</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Steuernummer:</td>
+                    <td class="col-1">201/113/40209</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-5" class="section-1">
+            
+            <h4></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd blue"
+                >
+                    <td class="col-0">Verkäufer:</td>
+                    <td class="col-1"></td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Nummer:</td>
+                    <td class="col-1">549910</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Globale Nummer:</td>
+                    <td class="col-1">4333741000005 (GLN)</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Name:</td>
+                    <td class="col-1">MUSTERLIEFERANT GMBH</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Anschrift:</td>
+                    <td class="col-1">BAHNHOFSTRASSE 99</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0"></td>
+                    <td class="col-1">DE 99199 MUSTERHAUSEN</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Telefon:</td>
+                    <td class="col-1">+49 932 431 500</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">E-Mail::</td>
+                    <td class="col-1">max.mustermann@musterlieferant.de</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Steuernummer:</td>
+                    <td class="col-1">201/113/40209</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-6" class="section-1">
+            
+            <h4></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd blue"
+                >
+                    <td class="col-0">Verkäufer:</td>
+                    <td class="col-1"></td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Nummer:</td>
+                    <td class="col-1">549910</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Globale Nummer:</td>
+                    <td class="col-1">4333741000005 (GLN)</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Name:</td>
+                    <td class="col-1">MUSTERLIEFERANT GMBH</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Anschrift:</td>
+                    <td class="col-1">BAHNHOFSTRASSE 99</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0"></td>
+                    <td class="col-1">DE 99199 MUSTERHAUSEN</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Telefon:</td>
+                    <td class="col-1">+49 932 431 500</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">E-Mail::</td>
+                    <td class="col-1">max.mustermann@musterlieferant.de</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Steuernummer:</td>
+                    <td class="col-1">201/113/40209</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="section-7" class="section-1">
+            
+            <h4></h4>
+            <hr/>
+            <table>
+                <tbody>
+                <tr class="odd blue"
+                >
+                    <td class="col-0">Bemerkungen</td>
+                    <td class="col-1"></td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Betreff:</td>
+                    <td class="col-1">AAK Price conditions</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Schlüssel:</td>
+                    <td class="col-1">ST3 Gegenseitige Vereinbarung.</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Inhalt:</td>
+                    <td class="col-1">Es bestehen Rabatt- oder Bonusvereinbarungen.</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Betreff:</td>
+                    <td class="col-1">AAJ Additional sale/purchase conditions</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Inhalt</td>
+                    <td class="col-1">Der Verkäufer bleibt Eigentümer der Waren bis zur vollständigen Erfüllung der
+Kaufpreisforderung.</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Telefon:</td>
+                    <td class="col-1">+49 932 431 500</td>
+                </tr>
+                <tr class="even "
+                >
+                    <td class="col-0">Betreff:</td>
+                    <td class="col-1">REG Regulatory information</td>
+                </tr>
+                <tr class="odd "
+                >
+                    <td class="col-0">Inhalt:</td>
+                    <td class="col-1">MUSTERLIEFERANT GMBH
+BAHNHOFSTRASSE 99
+99199 MUSTERHAUSEN
+Geschäftsführung:
+Max Mustermann
+USt-IdNr: DE123456789
+Telefon: +49 932 431 0
+www.musterlieferant.de
+HRB Nr. 372876
+Amtsgericht Musterstadt
+GLN 4304171000002</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <table>
+            <tbody>
+            <tr>
+                <th class="blue">Pos</th>
+                <th class="blue">Referenzen</th>
+                <th class="blue">Beschreibung</th>
+                <th class="blue">Nettopreis</th>
+                <th class="blue">Menge</th>
+                <th class="blue">Einheit</th>
+                <th class="blue">Steuersatz</th>
+                <th class="blue">Nettobetrag</th>
+            </tr>
+
+            <tr class="odd"
+            >
+                <td class="p-col-1 left">1</td>
+                <td class="p-col-2 left">Art-Nr-Lieferant:
+WA997
+4123456000014 (GLN)</td>
+                <td class="p-col-3 left">Wirkarbeit
+Bruttopreis</td>
+                <td class="p-col-4 right">0,0520</td>
+                <td class="p-col-5 right">1.000</td>
+                <td class="p-col-6 right">kWh</td>
+                <td class="p-col-7 right">19%</td>
+                <td class="p-col-8 right">52,00</td>
+            </tr>
+
+            <tr class="even"
+            >
+                <td class="p-col-1 left">2</td>
+                <td class="p-col-2 left">Art-Nr-Lieferant:
+WA997
+4123456000014 (GLN)</td>
+                <td class="p-col-3 left">Wirkarbeit
+Bruttopreis </td>
+                <td class="p-col-4 right">0,0520</td>
+                <td class="p-col-5 right">1.000</td>
+                <td class="p-col-6 right">kWh</td>
+                <td class="p-col-7 right">19%</td>
+                <td class="p-col-8 right">52,00</td>
+            </tr>
+
+            <tr class="odd"
+            >
+                <td class="p-col-1 left">3</td>
+                <td class="p-col-2 left">Art-Nr-Lieferant:
+WA997
+4123456000014 (GLN)</td>
+                <td class="p-col-3 left">Wirkarbeit
+Bruttopreis </td>
+                <td class="p-col-4 right">0,0520</td>
+                <td class="p-col-5 right">1.000</td>
+                <td class="p-col-6 right">kWh</td>
+                <td class="p-col-7 right">19%</td>
+                <td class="p-col-8 right">52,00</td>
+            </tr>
+
+            <tr class="even"
+            >
+                <td class="p-col-1 left">4</td>
+                <td class="p-col-2 left">Art-Nr-Lieferant:
+WA997
+4123456000014 (GLN)</td>
+                <td class="p-col-3 left">Wirkarbeit
+Bruttopreis </td>
+                <td class="p-col-4 right">0,0520</td>
+                <td class="p-col-5 right">1.000</td>
+                <td class="p-col-6 right">kWh</td>
+                <td class="p-col-7 right">19%</td>
+                <td class="p-col-8 right">52,00</td>
+            </tr>
+
+            <tr class="odd"
+            >
+                <td class="p-col-1 left">5</td>
+                <td class="p-col-2 left">Art-Nr-Lieferant:
+WA997
+4123456000014 (GLN)</td>
+                <td class="p-col-3 left">Wirkarbeit
+Bruttopreis </td>
+                <td class="p-col-4 right">0,0520</td>
+                <td class="p-col-5 right">1.000</td>
+                <td class="p-col-6 right">kWh</td>
+                <td class="p-col-7 right">19%</td>
+                <td class="p-col-8 right">52,00</td>
+            </tr>
+
+            <tr class="even"
+            >
+                <td class="p-col-1 left">6</td>
+                <td class="p-col-2 left">Art-Nr-Lieferant:
+WA997
+4123456000014 (GLN)</td>
+                <td class="p-col-3 left">Wirkarbeit
+Bruttopreis </td>
+                <td class="p-col-4 right">0,0520</td>
+                <td class="p-col-5 right">1.000</td>
+                <td class="p-col-6 right">kWh</td>
+                <td class="p-col-7 right">19%</td>
+                <td class="p-col-8 right">52,00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
